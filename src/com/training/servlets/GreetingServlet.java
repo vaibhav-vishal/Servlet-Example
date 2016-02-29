@@ -36,6 +36,7 @@ public class GreetingServlet extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
 		String user = request.getParameter("userName");
+		@SuppressWarnings("unused")
 		String pword = request.getParameter("passWord");
 		String role = request.getParameter("role");
 		out.println("Welcome "+ role+" "+user);
